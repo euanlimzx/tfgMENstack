@@ -18,6 +18,10 @@ app.get("/", (req, res) => {
   res.render("nav/homepage.ejs");
 });
 
+app.get("/competition", (req, res) => {
+  res.render("nav/competition.ejs");
+});
+
 app.listen(8080, () => {
   console.log("listening!");
 });
