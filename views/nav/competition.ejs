@@ -1,69 +1,145 @@
 <% layout('boilerplate')%>
-<div class="px-4 py-5 my-5 text-center">
-  <h1 class="display-5 pt-5 fw-bold font-2">2023 TFG Video Competition</h1>
-  <div class="col-lg-6 mx-auto">
-    <p class="lead mb-4">
-      Quickly design and customize responsive mobile-first sites with Bootstrap,
-      the world’s most popular front-end open source toolkit, featuring Sass
-      variables and mixins, responsive grid system, extensive prebuilt
-      components, and powerful JavaScript plugins.
-    </p>
+
+<div
+  class="container-fluid px-4 pt-5 mt-5 text-center d-flex flex-column justify-content-center competition-background text-white"
+  style="height: 90vh"
+>
+  <div class="row align-items-center g-lg-5 py-5 px-5">
+    <div class="col-lg-7 text-center text-lg-start">
+      <h1 class="font-4 fw-bold mb-3 jumbotron-header">
+        2023 TFG Video Competition
+      </h1>
+      <p class="col-lg-10 font-4 jumbotron-subheader">
+        The TFG video competition is back! Stand a chance to win up to $300 USD
+        for your TFG videos!
+      </p>
+    </div>
+    <div class="col-md-10 mx-auto col-lg-5 pt-5 jumbotron-subheader text-start">
+      <span class="fw-bold font-2">Requirements</span><br />
+      <span class="font-4"
+        >‣ Open to participants aged 16-25 <br />
+        ‣Video should either be in English, or Filipino with English Subtitles
+        <br />
+        ‣ Video should be 2-5 minutes long</span
+      >
+    </div>
   </div>
-</div>
+  </div>
 
-<div class="container px-4 pb-5" id="custom-cards">
-  <h2 class="pb-2 text-center font-3">Past Winners</h2>
-
-  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
-    <div class="col" style="height: 37vh">
-      <iframe
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/QsdTdXZSSeA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+  <div data-aos="flip-left" class="px-md-4 py-2 m-md-5 m-3 text-center">
+    <h2 class="fs-2 pt-5 pb-3 font-3">Prizes</h2>
+    <div class="px-md-5">
+      <img
+        src="images/prizes.jpg"
+        style="max-width: 100%; height: auto"
+        class="img-fluid"
+        alt=""
+      />
     </div>
-    <div class="col" style="height: 37vh">
-      <iframe
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/HXrXC4OSe1c"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
+  </div>
+  <div data-aos="flip-right" class="px-md-4 py-2 m-md-5 m-3 text-center">
+    <h2 class="fs-2 pt-5 pb-3 font-3">Judging Criteria</h2>
+    <div class="table-responsive px-md-3">
+      <table class="table table-bordered">
+        <thead>
+          <tr class="table-dark font-3">
+            <th scope="col">Criteria</th>
+            <th scope="col">Below Expectations</th>
+            <th scope="col">Meeting Expectations</th>
+            <th scope="col">Exceeding Expectations</th>
+            <th scope="col">Your Score</th>
+          </tr>
+        </thead>
+        <tbody class="font-3 text-center">
+          <tr>
+            <td class="text-start">
+              <span class="fw-bold">Explanation of TFG Concept(s)</span
+              ><br />Participants can include all 5 concepts, or select a few to
+              focus on. We will grade based on your explanation of concepts.
+            </td>
+            <td>
+              <span class="fw-bold">0 - 5 </span><br />
+              Video content demonstrates limited understanding of the concepts
+              of TFG.
+            </td>
+            <td>
+              <span class="fw-bold">6 - 10</span> <br />
+              Video content demonstrates adequate understanding of the concepts
+              of TFG.
+            </td>
+            <td>
+              <span class="fw-bold">11 - 15</span> <br />
+              Video content demonstrates excellent understanding of the concepts
+              of TFG.
+            </td>
+            <td class="fw-bold">/15</td>
+          </tr>
+          <tr>
+            <td class="text-start fw-bold">Inspiration</td>
+            <td>
+              <span class="fw-bold">0 - 5 </span><br />
+              A call for support is not made, leaving no impression on the
+              audience.
+            </td>
+            <td>
+              <span class="fw-bold">6 - 10</span> <br />
+              A call for support is made, leaving a mediocre impression on the
+              audience.
+            </td>
+            <td>
+              <span class="fw-bold">11 - 15</span> <br />
+              A strong call for support is made, leaving a lasting impression on
+              the audience.
+            </td>
+            <td class="fw-bold">/15</td>
+          </tr>
+          <tr>
+            <td class="text-start fw-bold">Creativity</td>
+            <td>
+              <span class="fw-bold">0 - 2 </span><br />Video incorporates a
+              limited range of creative elements.
+            </td>
+            <td>
+              <span class="fw-bold">3 - 6 </span><br />Video incorporates
+              satisfactory levels of creative elements.
+            </td>
+            <td>
+              <span class="fw-bold">7 - 10</span> <br />Video incorporates
+              ingenious creative elements.
+            </td>
+            <td class="fw-bold">/10</td>
+          </tr>
+          <tr>
+            <td colspan="4" class="text-end fw-bold">Your score</td>
 
-    <!-- <div class="col">
-      <div
-        class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-        style="background-image: url('unsplash-photo-1.jpg')"
-      >
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-            Short title, long jacket
-          </h2>
-        </div>
-      </div>
+            <td class="fw-bold">/40</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
 
-    <div class="col">
-      <div
-        class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-        style="background-image: url('unsplash-photo-2.jpg')"
-      >
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-            Much longer title that wraps to multiple lines
-          </h2>
+  <div data-aos="zoom-in">
+    <div class="container px-4 pb-5">
+      <h2 class="text-center fs-2 font-3">Past Winners</h2>
+
+      <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 pt-4">
+        <div class="col" style="height: 37vh">
           <iframe
-            width="560"
-            height="315"
+            width="100%"
+            height="100%"
             src="https://www.youtube.com/embed/QsdTdXZSSeA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col" style="height: 37vh">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/HXrXC4OSe1c"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -72,18 +148,5 @@
         </div>
       </div>
     </div>
-
-    <div class="col">
-      <div
-        class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-        style="background-image: url('unsplash-photo-3.jpg')"
-      >
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-            Another longer title belongs here
-          </h2>
-        </div>
-      </div>
-    </div> -->
   </div>
 </div>
