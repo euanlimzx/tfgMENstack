@@ -22,6 +22,10 @@ app.get("/competition", (req, res) => {
   res.render("nav/competition.ejs");
 });
 
+app.get("/tfgChallenge", (req, res) => {
+  res.render("tfgChallenge/challengeHomepage.ejs");
+});
+
 app.listen(8080, () => {
   console.log("listening!");
 });
