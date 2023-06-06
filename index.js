@@ -18,6 +18,10 @@ app.get("/", (req, res) => {
   res.render("nav/homepage.ejs");
 });
 
+app.get("/mainConcepts", (req, res) => {
+  res.render("nav/mainConcepts.ejs");
+});
+
 app.get("/competition", (req, res) => {
   res.render("nav/competition.ejs");
 });
