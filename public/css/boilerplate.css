@@ -213,17 +213,8 @@ IMPACT */
 
 /* COMPETITION */
 .competition-background {
-  background: #ee0979; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #ff6a00,
-    #ee0979
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #ff6a00,
-    #ee0979
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #08aeea;
+  background-image: linear-gradient(122deg, #08aeea 0%, #2af598 100%);
 }
 
 body {
@@ -247,7 +238,7 @@ body {
   .timeline-steps .timeline-step:not(:last-child):after {
     content: "";
     display: block;
-    border-top: 0.25rem dotted rgba(237, 3, 32, 0.87);
+    border-top: 0.25rem dotted #08aeea;
     width: 3.46rem;
     position: absolute;
     left: 7.5rem;
@@ -256,7 +247,7 @@ body {
   .timeline-steps .timeline-step:not(:first-child):before {
     content: "";
     display: block;
-    border-top: 0.25rem dotted rgba(237, 3, 32, 0.87);
+    border-top: 0.25rem dotted #08aeea;
     width: 3.8125rem;
     position: absolute;
     right: 7.5rem;
@@ -276,12 +267,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(237, 3, 32, 0.87);
+  background-color: #08aeea;
 }
 
 .timeline-steps .timeline-content .inner-circle:before {
   content: "";
-  background-color: rgba(237, 3, 32, 0.87);
+  background-color: #08aeea;
   display: inline-block;
   height: 3rem;
   width: 3rem;
@@ -308,6 +299,15 @@ body {
 /* 
 MAIN CONCEPTS */
 .main-concepts {
-  background-color: #08aeea;
-  background-image: linear-gradient(122deg, #08aeea 0%, #2af598 100%);
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
