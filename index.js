@@ -26,6 +26,11 @@ app.get("/competition", (req, res) => {
   res.render("nav/competition.ejs");
 });
 
+app.get("/pastWinners", (req, res) => {
+  res.render("nav/pastWinners.ejs");
+});
+
+
 app.get("/tfgChallenge", (req, res) => {
   res.render("tfgChallenge/challengeHomepage.ejs");
 });
